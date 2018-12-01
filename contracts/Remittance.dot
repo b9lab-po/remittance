@@ -1,0 +1,13 @@
+strict digraph {
+  constructor [color=brown]
+  getAmount [color=purple]
+  LogGetAmount
+  transfer
+  claimBack [color=purple]
+  LogClaimBack
+  getAmount -> LogGetAmount
+  getAmount -> transfer
+  claimBack -> LogClaimBack
+  claimBack -> transfer
+}
+
